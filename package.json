@@ -1,0 +1,19 @@
+{
+  "name": "asynchronousjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asynchronous.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vickase/asynchronous.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vickase/asynchronous/issues"
+  },
+  "homepage": "https://github.com/Vickase/asynchronous#readme"
+}
