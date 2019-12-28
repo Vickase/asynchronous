@@ -69,6 +69,17 @@ console.log("End of Challenge 3");
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log("Start of Challenge 4");
 // ...your code below
+const delays = [2000, 5000, 0, 3500];
+function forEach(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i], i);
+  }
+}
+
+function delayLog(delayTime, i) {
+  const id = setTimeout(() => console.log("printing element " + i), delayTime);
+}
+forEach(delays, delayLog);
 
 console.log("End of Challenge 4");
 // */// (do not alter this line)
@@ -82,6 +93,24 @@ console.log("End of Challenge 4");
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log("Start of Challenge 5");
 // ...your code below
+function changeColor() {
+  const current = (document.body.style.backgroundColor = "rgb(221, 238, 255)");
+  if (current) {
+    document.body.style.backgroundColor = "rgb(255, 238, 221)";
+  }
+}
+
+const boton1 = document.querySelector("#activate");
+const boton2 = document.querySelector("#color");
+
+boton1.addEventListener("click", () => {
+  console.log("clicked #1");
+
+  boton2.addEventListener("click", () => {
+    console.log("clicked #2");
+    changeColor();
+  });
+});
 
 // ...your code above
 document.body.style.background = "#def";
